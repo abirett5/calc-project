@@ -1,10 +1,10 @@
+const textInput = document.getElementById('textInput');
 const submitBtn = document.getElementById('submit');
 const displayResult = document.getElementById('displayResult');
 
 submitBtn.addEventListener("click", displayFunc);
 
 function displayFunc() {
-    const textInput = document.getElementById('textInput');
     if (textInput == null || textInput == "") {
         alert('Please type your name first!');
     } else {
