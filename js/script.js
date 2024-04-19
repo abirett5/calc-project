@@ -5,7 +5,12 @@ const displayResult = document.getElementById('displayResult');
 submitBtn.addEventListener("click", displayFunc);
 
 function displayFunc() {
-    displayResult.innerHTML = 'Hey ' + textInput.value + ', The computer Choose ' + name;
+    if (textInput == null || textInput == "") {
+        alert('Please type your name first!');
+    } else {
+        displayResult.innerHTML = 'Hey ' + textInput.value + ', The computer Choose ' + name;
+    };
+    // displayResult.innerHTML = 'Hey ' + textInput.value + ', The computer Choose ' + name;
 };
 
 let names = ['Rock', 'Paper', 'Scissor'];
